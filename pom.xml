@@ -5,6 +5,8 @@
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>3.2.5</version>
+    <!-- ensure Maven uses the remote parent rather than attempting a local relative path -->
+    <relativePath/>
   </parent>
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
@@ -287,6 +289,7 @@
         <?m2e ignore?>
         <groupId>org.cyclonedx</groupId>
         <artifactId>cyclonedx-maven-plugin</artifactId>
+        <version>2.9.5</version>
       </plugin>
     </plugins>
   </build>
